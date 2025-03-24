@@ -1,1 +1,1 @@
-# ProyectoIndividualAI
+#  gquesada_computer_architecture_1_2025
