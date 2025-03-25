@@ -157,7 +157,7 @@ def resultado():
         tk.Label(ventana_resultado, text="Cuadrante Recortado").grid(row=0, column=1)
         tk.Label(ventana_resultado, image=imagen_tk_recortada).grid(row=1, column=1)
 
-        tk.Label(ventana_resultado, text="Imagen Procesada").grid(row=0, column=2)
+        tk.Label(ventana_resultado, text="Imagen con Interpolación").grid(row=0, column=2)
         tk.Label(ventana_resultado, image=imagen_tk_procesada).grid(row=1, column=2)
 
         # Mantener referencias para evitar que se borren
