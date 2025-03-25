@@ -17,7 +17,7 @@ _start:
 
     mov [fd_out], rax    ; Guardar el descriptor de archivo
     
-    mov bl, 0b01011111  ; Semilla inicial
+    mov bl, 0b01010011  ; Semilla inicial
     mov r8, 10          ; Contador de números a generar
     
 generar_numero:
