@@ -82,7 +82,7 @@ def realizar_recorte():
 def guardar_matriz_en_txt(matriz):
     with open("matriz_pixeles.txt", "w") as f:
         for fila in matriz:
-            f.write(" ".join(map(str, fila)) + "\n")
+            f.write(" ".join(f"{pixel:03d}" for pixel in fila) + "\n")
 
 # Función para leer una matriz desde un archivo TXT
 def leer_matriz_desde_txt():
