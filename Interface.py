@@ -107,7 +107,7 @@ def ejecutar_ensamblador():
         resultado = subprocess.run(["./interpolacion"], capture_output=True, text=True)
 
         # Mostrar la salida en la interfaz
-        label_error.config(text="Salida del ensamblador:\n" + resultado.stdout, fg="blue")
+        label_error.config(text=" Cargando...\n" + resultado.stdout, fg="blue")
     
     except subprocess.CalledProcessError as e:
         label_error.config(text=f"Error al ejecutar ensamblador:\n{e}", fg="red")
