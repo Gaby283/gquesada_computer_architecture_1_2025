@@ -275,6 +275,8 @@ convert_to_ascii:
     ret
     
 cal_new:
+    imul r14, r14, 100
+    imul r15, r15, 100
     ; el de dos tercios
     imul r15, r15, 2
     mov rax, r15
@@ -292,8 +294,11 @@ cal_new:
     
     ;se suman para generar ahora sí el nuevo pixel
     add r15, r14
+  
     mov rax, r15
     xor rdx, rdx
+    mov rcx, 100
+    div rcx
     mov r15, rax
     
     ret
